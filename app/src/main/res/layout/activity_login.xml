@@ -1,48 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
-
-    <FrameLayout
+    <com.google.android.gms.common.SignInButton
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_button"
+        android:layout_width="200dp" />
+   <!-- <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonFacebookLogin"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />-->
+    <Button
+        android:id="@+id/sign_out_button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="218dp"
+        android:text="Sign Out"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wa"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="26dp"
-                android:text="   B.A.College of Engineering  and   Technology"
-                android:textStyle="bold|italic"/>
-        </RelativeLayout>
-
-
-
-
-        <com.google.android.gms.common.SignInButton
-              android:id="@+id/sign_in_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:text="Login" />
-
-
-    </FrameLayout>
-</RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progresbar"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
