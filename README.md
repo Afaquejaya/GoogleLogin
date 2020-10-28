@@ -1,15 +1,26 @@
-                      # GoogleLogin -Connected  with Firebase#
-                      (for android app)
+# GoogleLogin -Connected  with Firebase
+(for android app)
 
 It IS just a simple LoginActivity with the code to login with GOOGLE :)
 
-it has two activity 
-1.main activity
-:where hello world program is there which will be open after login through google
+### step:1
+1. create project in android stud. & link it with firebase.
 
-2. LoginActivity
-:it is the 1st page appear when you open this app googlesign in button will appear here
+***===Link with firebase ===***
+1. Add project name from manifest.& add all required dependencies.
+2. Add json file inside (project->app (paste)
+3. add SHA-1 from (top right side->gradle->--Proj Name-->app->Tasks->android->signingReport(click twice)
+Done & skip
+===============================
 
-***********************************************************
-some setting  may need to do as it is connected with firebase so you need to enable google sign in.after creating a
-project in firebase.
+### step :2
+1. In frrebase : Developer->Authentication->sign-in method(enable google login)
+2. Go to docs (top right side in firebase)
+Get strtd with android->(scroll down)Authentication->android->Google Sign in(open and follow the doc)
+
+
+
+***==: Hints firebase Source Code :==***
+https://github.com/firebase
+https://github.com/firebase/quickstart-android/tree/0b08cc1e82167b70d48ecd4e9dbaed1e710e22a0/auth/app/src/main/java/com/google/firebase/quickstart/auth/java
+
