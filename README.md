@@ -21,6 +21,7 @@ Get strtd with android->(scroll down)Authentication->android->Google Sign in(ope
 
 
 ***==: Hints firebase Source Code :==***
-https://github.com/firebase
-https://github.com/firebase/quickstart-android/tree/0b08cc1e82167b70d48ecd4e9dbaed1e710e22a0/auth/app/src/main/java/com/google/firebase/quickstart/auth/java
+
+* https://github.com/firebase
+* https://github.com/firebase/quickstart-android/tree/0b08cc1e82167b70d48ecd4e9dbaed1e710e22a0/auth/app/src/main/java/com/google/firebase/quickstart/auth/java
 
